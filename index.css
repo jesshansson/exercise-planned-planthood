@@ -184,7 +184,7 @@ h1 {
   grid-template-columns: repeat(3, 1fr);
   align-self: center;
   justify-items: center;
-  margin: 2rem 0 4rem 0;
+  margin: 2rem 0;
 }
 
 .plant-grid img {
@@ -192,8 +192,11 @@ h1 {
 }
 
 .grid-btn {
-  grid-column: 2/3;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 2rem 0;
 }
+
 
 .bottom-article {
   width: 90%;
@@ -278,6 +281,10 @@ footer .contact-info {
 
 @media (max-width: 800px) {
 
+  main {
+    width: 80%;
+  }
+
   .hero {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
@@ -309,6 +316,20 @@ footer .contact-info {
 
   nav {
     display: none;
+  }
+
+  h1 {
+    font-size: 30px
+  }
+
+  h2 {
+    font-size: 22px;
+
+  }
+
+  .featured-btn {
+    padding: 0.5rem 1.1rem;
+    font-size: 18px;
   }
 
   .plant-grid {
@@ -354,4 +375,13 @@ footer .contact-info {
   .footer-left{
     grid-row: 2/3;
   }
+}
+
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 25px;
+  }
+
+
 }
