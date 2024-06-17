@@ -1,0 +1,149 @@
+:root {
+  --green: #0A846E;
+  --greenheader: #055647;
+  --brown: #9E6D52;
+  --shadow: 0 4px 4px rgba(3, 56, 47, 0.11);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-image: url("./assets/footer.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  max-height: 50vh;
+ /* background-color: rgba(0, 0, 0, 0.6); */
+}
+
+header img {
+  margin: 3rem 0 0 0;
+  width: 50%;
+  width: fit-content;
+}
+
+header h1 {
+  font-family: "Maven Pro", sans-serif;
+  color: white;
+  font-weight: 500;
+  text-shadow: var(--shadow);
+  margin: 3rem;
+}
+
+legend {
+  text-shadow: var(--shadow);
+  font-family: "Lato", sans-serif;/*ÄNDRADE FRÅN h2*/
+}
+
+label {
+  display: block;
+} /*LA TILL*/
+
+.add-plant {
+  display: flex;
+  flex-direction: column;
+  margin: 0 3rem;
+  padding: 3rem 0;
+  width: 100%;
+}
+
+.input-forms label {
+  margin-right: 0.5rem;
+} /*Ta bort?*/
+
+input {
+  border: 1px solid rgba(226, 226, 226, 0.801);
+  box-shadow: var(--shadow);
+  padding: 0.5rem 1rem;
+}
+
+.add-plant-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+
+}
+
+.add-plant-form label,
+.add-plant-form input {
+  margin-right: 1rem;
+}
+
+.featured-btn {
+  padding: 1rem 1.2rem;
+  font-size: 18px;
+  align-self: center;
+}
+
+.plants-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.plant-header {
+  margin: 1rem;
+  align-self: center;
+}
+
+.plants {
+  margin: 1rem 2rem;
+}
+
+.planted-plants {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: var(--brown);
+  width: 100%;
+  margin: 0;
+  padding: 2rem 0;
+  justify-items: center;
+}
+
+footer img {
+  width: 90%;
+  
+}
+
+@media (max-width: 800px) {
+ .plants-section img {
+  max-width: 100%;
+ }
+  .add-plant-form {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+  }
+
+  .planted-plants {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .menu-svg img {
+    margin: 0;
+  }
+
+  footer {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  footer img {
+  padding: 1rem;
+  }
+
+}
