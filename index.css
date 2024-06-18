@@ -357,7 +357,6 @@ footer .contact-info p {
   }
 
   .grid-box {
-
     figcaption .date,
     p {
       font-size: 10px;
@@ -379,7 +378,6 @@ footer .contact-info p {
       justify-self: end;
       cursor: pointer;
     }
-
   }
 
   .bottom-article button {
@@ -393,29 +391,32 @@ footer .contact-info p {
     h2 {
       font-size: 30px;
     }
- 
 
-  .footer-right {
-    grid-row: 1/2;
-  }
+    .footer-right {
+      grid-row: 1/2;
+    }
 
-  .footer-right img {
-    padding: 2rem 0;
-  }
+    .footer-right img {
+      padding: 2rem 0;
+    }
 
-  .footer-left {
-    grid-row: 2/3;
-  }
+    .footer-left {
+      grid-row: 2/3;
+      padding: 1rem;
+    }
 
-  .contact-info {
-    padding: 0;
-  }
+    .contact-info {
+      padding: 0;
 
-  .contact-info p {
-    gap: 0.5rem;
+      img {
+        width: 15%;
+      }
+    }
+
+    .contact-info p {
+      gap: 0.5rem;
+    }
   }
-}
- 
 }
 
 @media (max-width: 600px) {

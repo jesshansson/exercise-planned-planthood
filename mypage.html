@@ -9,7 +9,7 @@
     <title>Planned Planthood - Mina sidor</title>
   </head>
   <body>
-    <main>
+    <div class="wrapper">
       <nav>
         <a href="#">PLANER</a>
         <a href="#">HISTORIK</a>
@@ -21,47 +21,79 @@
         <img src="./assets/Logo.svg" alt="Logo" />
         <h1>Mina sidor</h1>
       </header>
-      <section class="add-plant">
-        <legend>Lägg till ny plantering:</legend>
-        <form class="add-plant-form">
-          <div class="input-group">
-            <label for="plant">Planta:</label>
-            <input type="text" id="plant" name="plant" />
-          </div>
-          <div class="input-group">
-            <label for="date">Datum:</label>
-            <input type="text" id="date" name="date" />
-          </div>
-        </form>
-        <button class="featured-btn">LÄGG TILL</button>
-      </section>
-      <section class="plants-section">
-        <h2 class="plant-header">Dina planerade planteringar</h2>
-        <section class="planned-plants plants">
-          <img src="./assets/gurka2.jpg" alt="Gurka" />
+      <main>
+        <section class="add-plant">
+          <legend>Lägg till ny plantering:</legend>
+          <form class="add-plant-form">
+            <div class="input-group">
+              <label for="plant">Planta:</label>
+              <input type="text" id="plant" name="plant" />
+            </div>
+            <div class="input-group">
+              <label for="date">Datum:</label>
+              <input type="date" id="date" name="date" />
+            </div>
+          </form>
+          <button class="featured-btn">LÄGG TILL</button>
         </section>
-        <h2 class="plant-header">Dina planterade planteringar:</h2>
-        <section class="planted-plants plants">
-          <img src="./assets/majrova.jpg" alt="Majrova" />
-          <img src="./assets/tomat1.jpg" alt="Tomat" />
+        <section class="plants-section">
+          <h2 class="plant-header">Dina planerade planteringar</h2>
+          <section class="plant-grid">
+            <article class="grid-box">
+              <figure><img src="./assets/gurka2.jpg" alt="Cucumber" /></figure>
+              <figcaption>
+                <h3>Gurka</h3>
+                <p class="date">15 april 2024</p>
+                <p>Rico Coolio</p>
+                <button class="remove-btn">Ta bort</button>
+                <img class="remove-icon" src="./assets/trashcan.jpg" alt="Ta bort" />
+              </figcaption>
+            </article>
+          </section>
+          <h2 class="plant-header">Dina planterade planteringar:</h2>
+          <section class="plant-grid">
+            <article class="grid-box">
+              <figure><img src="./assets/tomat2.jpg" alt="Tomato" /></figure>
+              <figcaption>
+                <h3>Tomat</h3>
+                <p class="date">1 april 2024</p>
+                <p>Majvor och P-Å</p>
+                <button class="remove-btn">Ta bort</button>
+                <img class="remove-icon" src="./assets/trashcan.jpg" alt="Ta bort" />
+              </figcaption>
+            </article>
+            <article class="grid-box">
+              <figure><img src="./assets/sockerärta.jpg" alt="Sockerärta" /></figure>
+              <figcaption>
+                <h3>Sockerärta</h3>
+                <p class="date">15 april 2024</p>
+                <p>Frippe</p>
+                <button class="remove-btn">Ta bort</button>
+                <img class="remove-icon" src="./assets/trashcan.jpg" alt="Ta bort" />
+              </figcaption>
+            </article>
+          </section>
         </section>
-      </section>
+      </main>
       <footer>
-        <img src="./assets/footer/footer5.jpg" alt="" />
-        <img src="./assets/footer/footer6.jpg" alt="" />
-        <img src="./assets/footer/footer7.jpg" alt="" />
-        <img src="./assets/footer/footer8.jpg" alt="" />
-        <!--<section class="footer-image-mobile">
-        <img src="./assets/footer/footer5.jpg" alt="">
-        <img src="./assets/footer/footer6.jpg" alt="">
-        <img src="./assets/footer/footer7.jpg" alt="">
-        <img src="./assets/footer/footer8.jpg" alt="">
-      </section>
+        <img src="./assets/footer/footer5.jpg" alt="A person in a plantation" />
+        <img src="./assets/footer/footer6.jpg" alt="Watering plants" />
+        <img src="./assets/footer/footer7.jpg" alt="Grown vegetables" />
+        <img src="./assets/footer/footer8.jpg" alt="Woman in a plantation" />
+        <!--<img
+          src="https://plus.unsplash.com/premium_photo-1681398651047-78491e34f66a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
+        <img src="https://images.unsplash.com/photo-1515150144380-bca9f1650ed9?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+        <img
+          src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
         -->
       </footer>
-      <section class="end-greeting">
+      <section class="end-info">
         <a href="#top"> Till toppen av sidan</a>
       </section>
-    </main>
+    </div>
   </body>
 </html>
