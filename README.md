@@ -1,5 +1,8 @@
 # Planned Planthood
-Övning i responsiv design i HTML/CSS
+
+### [Se sidan live ](https://jesshansson.github.io/exercise-planned-planthood/)
+
+
 
 Nyköpt hus med trädgård, spännande kolonilott eller ett öppet fält som behöver lite kärlek? Det är dags att börja planera sina planteringar!
 En kund har bett om en enklare lösning för att få bättre koll på vilken planta som skall sås vilken dag på vårkanten.
@@ -11,3 +14,6 @@ Följande design har tagits fram och det är ditt jobb att bygga denna hemsida: 
 Alla svg-ikoner finns i det medföljande assets-foldern. På varje bild så finns det en kommentar som länkar till en sida där bilden går att hämta ifrån.
 
 <figure><img src='screenshot.png'></figure>
+
+
+[def]: https://jesshansson.github.io/exercise-planned-planthood/

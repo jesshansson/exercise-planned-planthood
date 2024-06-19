@@ -33,8 +33,7 @@ header h1 {
 }
 
 .add-header {
-  text-shadow: var(--shadow);
-  font-size: 32px;
+  font-size: 25px;
   justify-self: flex-start;
   font-family: "Open Sans", sans-serif;
 }
@@ -49,7 +48,6 @@ label {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
   margin: 0 3rem;
   padding: 3rem 0;
   width: 90%;
@@ -90,17 +88,8 @@ input {
   margin: 1rem;
   align-self: center;
   font-family: "Lato", sans-serif;
-  font-size: 32px;
+  font-size: 25px;
 }
-
-/* .plants {
-  margin: 1rem 2rem;
-}
-
-.planted-plants {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-} */
 
 .plant-grid {
   display: grid;
@@ -115,52 +104,6 @@ input {
   }
 }
 
-.grid-box {
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-
-  figcaption {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: stretch;
-    align-items: stretch;
-    padding: 1rem;
-  }
-
-  img {
-    width: 100%;
-  }
-
-  p {
-    margin: 1rem 0;
-  }
-
-  figcaption h3 {
-    font-size: 20px;
-  }
-
-  figcaption .date {
-    text-align: end;
-    font-weight: 600;
-    font-size: 18px;
-    margin: 0;
-  }
-
-  figcaption .remove-btn {
-    width: fit-content;
-    justify-self: end;
-    margin: 0.5rem;
-    background-color: #b93857;
-    color: white;
-    padding: 0 1rem;
-    border-radius: 15px;
-    border: none;
-    font-family: "Open Sans", sans-serif;
-  }
-
-  figcaption .remove-icon {
-    display: none;
-  }
-}
 
 footer {
   display: grid;
@@ -180,9 +123,23 @@ footer img {
 }
 
 @media (max-width: 800px) {
+  .add-header {
+    align-self: center;
+  }
+
+  .add-header,
+  .plant-header {
+    font-size: 22px;
+  }
+
   .plants-section img {
     max-width: 100%;
   }
+
+  .add-plant {
+    margin: 0;
+  }
+
   .add-plant-form {
     flex-direction: column;
     gap: 1.5rem;
@@ -194,37 +151,13 @@ footer img {
   }
 
   input {
-    width: 70vw;
+    width: 80vw;
   }
 
   .plant-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     margin: 1rem;
-  }
-
-  .grid-box {
-    figcaption .date,
-    p {
-      font-size: 10px;
-    }
-
-    figcaption h3 {
-      font-size: 14px;
-    }
-
-    figcaption .remove-btn {
-      display: none;
-    }
-
-    figcaption .remove-icon {
-      display: block;
-      width: 20px;
-      height: 20px;
-      align-self: center;
-      justify-self: end;
-      cursor: pointer;
-    }
   }
 
   .menu-svg img {

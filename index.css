@@ -35,14 +35,20 @@ header {
   justify-content: center;
 }
 
-.grid-2 {
+.grid-2,
+.grid-3 {
   grid-column: 2 / 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-2 {
   grid-row: 1 / 2;
   background-color: var(--brown);
 }
 
 .grid-3 {
-  grid-column: 2 / 3;
   grid-row: 2 / 3;
   background-color: var(--green);
 }
@@ -133,53 +139,6 @@ h1 {
   }
 }
 
-.grid-box {
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-
-  figcaption {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: stretch;
-    align-items: stretch;
-    padding: 1rem;
-  }
-
-  img {
-    width: 100%;
-  }
-
-  p {
-    margin: 1rem 0;
-  }
-
-  figcaption h3 {
-    font-size: 20px;
-  }
-
-  figcaption .date {
-    text-align: end;
-    font-weight: 600;
-    font-size: 18px;
-    margin: 0;
-  }
-
-  figcaption .remove-btn {
-    width: fit-content;
-    justify-self: end;
-    margin: 0.5rem;
-    background-color: #b93857;
-    color: white;
-    padding: 0 1rem;
-    border-radius: 15px;
-    border: none;
-    font-family: "Open Sans", sans-serif;
-  }
-
-  figcaption .remove-icon {
-    display: none;
-  }
-}
-
 .grid-btn {
   display: flex;
   justify-content: center;
@@ -216,49 +175,48 @@ footer {
   min-height: 400px;
   font-family: "Maven Pro", sans-serif;
   font-size: 20px;
-}
 
-footer .footer-left {
-  background-color: rgba(0, 0, 0, 0.6);
-  color: #ffff;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-}
+  .footer-left {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
 
-footer h2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 50px;
-  font-weight: 500;
-  height: 100%;
-}
+  h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    font-weight: 500;
+    height: 100%;
+  }
 
-footer .footer-right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .footer-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-footer .logo {
-  padding: 1rem;
-}
+  .logo {
+    padding: 1rem;
+  }
 
-footer .contact-info {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  padding: 0 0.2rem;
-}
+  .contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 0.2rem;
+  }
 
-footer .contact-info p {
-  display: flex;
-  align-items: center;
-  gap: 0 0.8rem;
+  .contact-info p {
+    display: flex;
+    align-items: center;
+    gap: 0 0.8rem;
+  }
 }
 
 .end-info {
@@ -274,43 +232,36 @@ footer .contact-info p {
     margin-bottom: 0;
   }
 
-  .hero {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
-    box-shadow: var(--shadow);
-  }
+  header {
+    .hero {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto auto;
+      box-shadow: var(--shadow);
+    }
 
-  .menu-svg {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    z-index: 10;
-    display: block;
-    cursor: pointer;
-  }
+    .grid-1 {
+      grid-column: 1 / 4;
+      grid-row: 1 / 2;
+      min-height: 60vh;
+    }
 
-  .grid-1 {
-    grid-column: 1 / 4;
-    grid-row: 1 / 2;
-    min-height: 60vh;
-  }
+    .grid-2 {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+    }
 
-  .grid-2 {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-  }
+    .grid-3 {
+      grid-column: 2 / 4;
+      grid-row: 2 / 3;
+    }
 
-  .grid-3 {
-    grid-column: 2 / 4;
-    grid-row: 2 / 3;
-  }
+    .hero-box {
+      padding: 1rem;
+    }
 
-  .hero-box {
-    padding: 1rem;
-  }
-
-  .hero-box img {
-    width: 60%;
+    .hero-box img {
+      width: 60%;
+    }
   }
 
   h1 {
@@ -356,30 +307,6 @@ footer .contact-info p {
     margin: 1.5rem 0;
   }
 
-  .grid-box {
-    figcaption .date,
-    p {
-      font-size: 10px;
-    }
-
-    figcaption h3 {
-      font-size: 14px;
-    }
-
-    figcaption .remove-btn {
-      display: none;
-    }
-
-    figcaption .remove-icon {
-      display: block;
-      width: 20px;
-      height: 20px;
-      align-self: center;
-      justify-self: end;
-      cursor: pointer;
-    }
-  }
-
   .bottom-article button {
     align-self: center;
   }
@@ -389,7 +316,7 @@ footer .contact-info p {
     grid-template-rows: 1fr 1fr;
 
     h2 {
-      font-size: 30px;
+      font-size: 35px;
     }
 
     .footer-right {
@@ -423,9 +350,4 @@ footer .contact-info p {
   h1 {
     font-size: 25px;
   }
-
-  /* .plant-grid {
-    grid-template-columns: 1fr;
-  }
-*/
 }
