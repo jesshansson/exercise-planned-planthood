@@ -1,9 +1,4 @@
-:root {
-  --green: #0a846e;
-  --greenheader: #055647;
-  --brown: #9e6d52;
-  --shadow: 0 4px 4px rgba(3, 56, 47, 0.11);
-}
+/*HEADER*/
 
 header {
   display: flex;
@@ -25,12 +20,13 @@ header img {
 
 header h1 {
   font-family: "Maven Pro", sans-serif;
-  color: white;
   font-size: 40px;
   font-weight: 500;
   text-shadow: var(--shadow);
   margin: 3rem;
 }
+
+/*MAIN*/
 
 .add-header {
   font-size: 25px;
@@ -104,6 +100,8 @@ input {
   }
 }
 
+/*FOOTER*/
+
 footer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -126,14 +124,14 @@ footer img {
 footer::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   background-color: var(--brown);
   opacity: 0.3;
   pointer-events: none;
 }
+
+/** Media queries **/
 
 @media (max-width: 800px) {
   .add-header {
@@ -185,7 +183,6 @@ footer::before {
   footer img {
     padding: 0.5rem;
     margin: 0;
-    width: 100%;
     height: 15vh;
   }
 }

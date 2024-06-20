@@ -107,9 +107,9 @@ a:hover {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
   .grid-img {
-  position: relative;
-  width: 100%;
-  height: auto;
+    position: relative;
+    width: 100%;
+    height: auto;
   }
 
   .img-icon {
@@ -118,7 +118,7 @@ a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 50%;
-}
+  }
 
   figcaption {
     display: grid;
@@ -163,6 +163,8 @@ a:hover {
     display: none;
   }
 }
+
+/** Media queries **/
 
 @media (max-width: 800px) {
   main {
@@ -217,5 +219,6 @@ a:hover {
   }
   .featured-btn {
     font-weight: 400;
+    text-transform: uppercase;
   }
 }
